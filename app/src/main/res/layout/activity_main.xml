@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="550dp"
+        app:cardBackgroundColor="#222222"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <EditText
+            android:id="@+id/calctrialedittext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:textAlignment="viewStart"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            tools:ignore="Autofill,SpeakableTextPresentCheck" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="30dp"
+        android:hapticFeedbackEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:useDefaultMargins="true">
+
+        <Button
+            android:id="@+id/buttonac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="20dp"
+            android:height="90dp"
+            android:fontFamily="@font/helvetica"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/ac"
+            android:textSize="21sp"
+            app:backgroundTint="#616161"
+            app:cornerRadius="100dp"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/buttonbrackets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="20dp"
+            android:height="90dp"
+            android:fontFamily="@font/helvetica"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/brackets"
+            android:textSize="21sp"
+            app:backgroundTint="#616161"
+            app:cornerRadius="100dp"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/buttonmodulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="20dp"
+            android:height="90dp"
+            android:fontFamily="@font/helvetica"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/modulo"
+            android:textSize="21sp"
+            app:backgroundTint="#616161"
+            app:cornerRadius="100dp"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/buttondivide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="20dp"
+            android:height="90dp"
+            android:fontFamily="@font/helvetica"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/divide"
+            android:textSize="21sp"
+            app:backgroundTint="#616161"
+            app:cornerRadius="100dp"
+            app:layout_column="3"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="20dp"
+            android:height="90dp"
+            android:fontFamily="@font/helvetica"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/_7"
+            android:textSize="21sp"
+            app:backgroundTint="#222222"
+            app:cornerRadius="100dp"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="20dp"
+            android:height="90dp"
+            android:fontFamily="@font/helvetica"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/_8"
+            android:textSize="21sp"
+            app:backgroundTint="#222222"
+            app:cornerRadius="100dp"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="20dp"
+            android:height="90dp"
+            android:fontFamily="@font/helvetica"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/_9"
+            android:textSize="21sp"
+            app:backgroundTint="#222222"
+            app:cornerRadius="100dp"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/buttonmultiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="20dp"
+            android:height="90dp"
+            android:fontFamily="@font/helvetica"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/multiply"
+            android:textSize="21sp"
+            app:backgroundTint="#616161"
+            app:cornerRadius="100dp"
+            app:layout_column="3"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="20dp"
+            android:height="90dp"
+            android:fontFamily="@font/helvetica"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/_4"
+            android:textSize="21sp"
+            app:backgroundTint="#222222"
+            app:cornerRadius="100dp"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="20dp"
+            android:height="90dp"
+            android:fontFamily="@font/helvetica"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/_5"
+            android:textSize="21sp"
+            app:backgroundTint="#222222"
+            app:cornerRadius="100dp"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="20dp"
+            android:height="90dp"
+            android:fontFamily="@font/helvetica"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/_6"
+            android:textSize="21sp"
+            app:backgroundTint="#222222"
+            app:cornerRadius="100dp"
+            app:layout_column="2"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/buttonsubtract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="20dp"
+            android:height="90dp"
+            android:fontFamily="@font/helvetica"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/subtract"
+            android:textSize="21sp"
+            app:backgroundTint="#616161"
+            app:cornerRadius="100dp"
+            app:layout_column="3"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="20dp"
+            android:height="90dp"
+            android:fontFamily="@font/helvetica"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/_1"
+            android:textSize="21sp"
+            app:backgroundTint="#222222"
+            app:cornerRadius="100dp"
+            app:layout_column="0"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="20dp"
+            android:height="90dp"
+            android:fontFamily="@font/helvetica"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/_2"
+            android:textSize="21sp"
+            app:backgroundTint="#222222"
+            app:cornerRadius="100dp"
+            app:layout_column="1"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="20dp"
+            android:height="90dp"
+            android:fontFamily="@font/helvetica"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/_3"
+            android:textSize="21sp"
+            app:backgroundTint="#222222"
+            app:cornerRadius="100dp"
+            app:layout_column="2"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/buttonaddition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="20dp"
+            android:height="90dp"
+            android:fontFamily="@font/helvetica"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/addition"
+            android:textSize="21sp"
+            app:backgroundTint="#616161"
+            app:cornerRadius="100dp"
+            app:layout_column="3"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/button0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="20dp"
+            android:height="90dp"
+            android:fontFamily="@font/helvetica"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/_0"
+            android:textSize="21sp"
+            app:backgroundTint="#222222"
+            app:cornerRadius="100dp"
+            app:layout_column="0"
+            app:layout_row="4" />
+
+        <Button
+            android:id="@+id/buttondot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="20dp"
+            android:height="90dp"
+            android:fontFamily="@font/helvetica"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/dot"
+            android:textSize="21sp"
+            app:backgroundTint="#222222"
+            app:cornerRadius="100dp"
+            app:layout_column="1"
+            app:layout_row="4" />
+
+        <Button
+            android:id="@+id/buttonc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="20dp"
+            android:height="90dp"
+            android:fontFamily="@font/helvetica"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/del"
+            android:textSize="21sp"
+            app:backgroundTint="#222222"
+            app:cornerRadius="100dp"
+            app:layout_column="2"
+            app:layout_row="4" />
+
+        <Button
+            android:id="@+id/buttonequal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="20dp"
+            android:height="90dp"
+            android:fontFamily="@font/helvetica"
+            android:hapticFeedbackEnabled="true"
+            android:text="@string/answer"
+            android:textSize="21sp"
+            app:backgroundTint="#DA7D27"
+            app:cornerRadius="100dp"
+            app:layout_column="3"
+            app:layout_row="4" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
